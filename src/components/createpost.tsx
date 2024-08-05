@@ -3,7 +3,7 @@ import React from 'react';
 function Createpost(props: any) {
     return (
         <div>
-            <div>Create Post</div>
+            <div className='bg-red-100'>Create Post</div>
             <div>
                 <div>
                     <input type="text" placeholder="Title" />
