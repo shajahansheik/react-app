@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import AuthContewxt from '../app-commons/authentication';
 import { Link, Route, Routes } from 'react-router-dom';
 import Createpost from './createpost';
+import PostsComponent from './my_posts';
+import AllPosts from './allPosts';
 
 function Dashboard() {
     const { logOut }: any = useContext(AuthContewxt);
@@ -26,8 +28,8 @@ function Dashboard() {
                 </ul>
             </nav>
             <Routes>
-                <Route path='/' element={<div>Dashboard</div>} />
-                <Route path='myposts' element={<div>My Posts</div>} />
+                <Route path='/' element={<div><AllPosts/></div>} />
+                <Route path='myposts' element={<div><PostsComponent/></div>} />
                 <Route path='newpost' element={<div><Createpost/></div>} />
                 
             </Routes>
