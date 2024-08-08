@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function Createpost(props: any) {
+function Createpost() {
     const [fileName, setFileName] = useState('No file chosen');
     const [fileContent, setFileContent] = useState('');
     const handleFileChange = (event: any) => {
@@ -42,7 +42,6 @@ function Createpost(props: any) {
                 
                     <div className="file-content">
                         <h3>File Content:</h3>
-                        
                         <iframe src={fileContent} ></iframe>
                     </div>
                 
