@@ -35,7 +35,7 @@ function App() {
 
       <Routes>
         <Route path='/login' element={<Login />} />
-        <Route path='/dashboard/*' element={<ProtectRoute><Dashboard/></ProtectRoute>} />
+        <Route path='/*' element={<ProtectRoute><Dashboard/></ProtectRoute>} />
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
     </Router>
